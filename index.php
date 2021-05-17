@@ -16,7 +16,7 @@
 				<p>O Pet Shop mais perto de você</p>
 			</div>
 			<div class="w3-cell w3-cell-middle">
-				<a class="w3-button w3-indigo w3-hover-deep-purple" href="#">Entrar</a>
+				<a class="w3-button w3-indigo w3-hover-black" href="#">Entrar</a>
 			</div>
 			</div>
 		</nav>
