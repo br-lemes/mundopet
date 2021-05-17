@@ -26,15 +26,17 @@
 				$results = $db->query("SELECT * FROM products");
 				while ($row = $results->fetchArray()) {
 			?>
-				<div class="w3-half w3-container">
-					<h2><a href="/products/?id=<?=$row[0]?>"><?=$row[1]?></a></h2>
-					<img class="w3-image" src="/images/<?=$row[4]?>">
-					<p class="w3-right-align">
-						<a class="w3-button w3-light-green w3-hover-green" href="/products/?id=<?=$row[0]?>">
-							R$ <?=$row[3]?>
-						</a>
-					</p>
-				</div>
+				<a href="/products/<?=$row[0]?>">
+					<div class="w3-col s6 m3 w3-container w3-hover-white">
+						<img class="w3-image" src="/images/<?=$row[4]?>">
+						<p class="w3-right-align">
+							<span class="w3-button w3-light-green w3-hover-light-green">
+								R$ <?=$row[3]?>
+							</span>
+						</p>
+						<p><?=$row[1]?></p>
+					</div>
+				</a>
 			<?php } ?></div>
 			<p class="w3-center">CONTEÚDO AQUI</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
