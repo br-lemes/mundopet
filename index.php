@@ -40,7 +40,7 @@
 			<?php } ?></div>
 		</div>
 		<div class="w3-card w3-container w3-content w3-section w3-pale-yellow">
-			<p class="w3-center">RODAPÉ AQUI</p>
+			<p class="w3-center">Copyright (c) 2021 Mundo Pet</p>
 		</div>
 	</body>
 </html>
