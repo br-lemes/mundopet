@@ -22,7 +22,7 @@
 		</nav>
 		<div class="w3-card w3-container w3-content w3-section w3-pale-yellow">
 			<div class="w3-row"><?php
-				$db = new SQLite3("petshop.sqlite3");
+				$db = new SQLite3("mundopet.sqlite3");
 				$results = $db->query("SELECT * FROM products");
 				while ($row = $results->fetchArray()) {
 			?>
