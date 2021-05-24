@@ -22,9 +22,8 @@
 		</nav>
 		<div class="w3-card w3-container w3-content w3-section w3-pale-yellow">
 			<div class="w3-row"><?php
-				$db = new SQLite3("mundopet.sqlite3");
-				$results = $db->query("SELECT * FROM products");
-				while ($row = $results->fetchArray()) {
+				$db = new PDO("sqlite:mundopet.sqlite3");
+				foreach ($db->query("SELECT * FROM products") as $row) {
 			?>
 				<a href="/products/<?=$row[0]?>">
 					<div class="w3-col s6 m3 w3-container w3-hover-white">
