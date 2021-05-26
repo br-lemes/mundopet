@@ -5,6 +5,7 @@
 		<title>Mundo Pet</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="/w3.css">
+		<link rel="icon" href="/favicon.ico">
 	</head>
 	<body>
 		<nav class="w3-card w3-blue w3-cell-row w3-center" style="position: sticky; top: 0;">
