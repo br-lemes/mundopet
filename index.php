@@ -10,7 +10,7 @@
 	<body>
 		<nav class="w3-card w3-blue w3-cell-row w3-center" style="position: sticky; top: 0;">
 			<div class="w3-cell w3-cell-middle">
-				<img src="/images/logo.png" width="80px">
+				<a href="/"><img src="/images/logo.png" width="80px"></a>
 			</div>
 			<div class="w3-cell w3-cell-middle">
 				<p><input type="text" class="w3-input" placeholder="Pesquisar na Mundo Pet"></p>
