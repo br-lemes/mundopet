@@ -25,7 +25,7 @@
 			$uri = explode("/", $_SERVER["REQUEST_URI"]);
 			if (count($uri) == 2 and $uri[0] == "" and $uri[1] == "") { ?>
 			<div class="w3-row"><?php
-				$db = new PDO("sqlite:mundopet.sqlite3");
+				$db = new PDO("sqlite:database/mundopet.sqlite3");
 				foreach ($db->query("SELECT * FROM products") as $row) { ?>
 				<a href="/products/<?=$row["id"]?>">
 					<div class="w3-col s6 m3 w3-panel w3-hover-white">
@@ -39,7 +39,7 @@
 					</div>
 				</a>
 			<?php } ?></div><?php } elseif (count($uri) == 3 and $uri[0] == "" and $uri[1] == "products") {
-				$db = new PDO("sqlite:mundopet.sqlite3");
+				$db = new PDO("sqlite:database/mundopet.sqlite3");
 				$stmt = $db->prepare("SELECT * FROM products WHERE id=?");
 				$stmt->execute([$uri[2]]);
 				foreach ($stmt->fetchAll() as $row) { ?>
