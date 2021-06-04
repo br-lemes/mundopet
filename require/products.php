@@ -2,7 +2,8 @@
 	$db = new PDO("sqlite:database/mundopet.sqlite3");
 	$stmt = $db->prepare("SELECT * FROM products WHERE id=?");
 	$stmt->execute([$uri[2]]);
-	foreach ($stmt->fetchAll() as $row) {
+	$row = $stmt->fetch();
+	if ($row) {
 ?>
 	<div class="w3-row">
 		<div class="w3-col m4 w3-panel">
@@ -19,5 +20,5 @@
 		</div>
 	</div>
 <?php
-	}
+	} else require "require/404.php";
 ?>
