@@ -23,9 +23,13 @@
 		</nav>
 		<div class="w3-card w3-container w3-content w3-section w3-pale-yellow">
 <?php require "require/main.php"; ?>
-		</div>
-		<div class="w3-card w3-container w3-content w3-section w3-pale-yellow">
-			<p class="w3-center">Copyright (c) 2021 Mundo Pet</p>
+			<hr>
+			<p class="w3-center">Copyright &copy; 2021 Mundo Pet</p>
+			<p class="w3-center">
+				Adriana Miria de França Oliveira Rodrigues de Jesus,
+				Breno Ramalho Lemes e
+				Michele de Souza Santana
+			</p>
 		</div>
 	</body>
 </html>
