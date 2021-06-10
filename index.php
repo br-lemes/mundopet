@@ -13,7 +13,7 @@
 				<a href="/"><img src="/images/logo.png" width="80px"></a>
 			</div>
 			<div class="w3-cell w3-cell-middle">
-				<p><input type="text" class="w3-input" placeholder="Pesquisar na Mundo Pet"></p>
+				<p><input id="search" type="text" class="w3-input" placeholder="Pesquisar na Mundo Pet"></p>
 				<p>O Pet Shop mais perto de você</p>
 			</div>
 			<div class="w3-cell w3-cell-middle">
@@ -32,4 +32,11 @@
 			</p>
 		</div>
 	</body>
+	<script>
+		search.addEventListener("keyup", function(e) {
+			var key = e.which || e.keyCode;
+			if (key == 13 && search.value != "")
+				window.location.href = "/search/" + search.value;
+		});
+	</script>
 </html>
