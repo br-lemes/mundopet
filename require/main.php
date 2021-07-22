@@ -14,6 +14,8 @@
 		$page = $uri[1];
 		$search = $uri[3];
 		require "require/search.php";
+	} elseif (count($uri) == 2 and $uri[0] == "" and $uri[1] == "login") {
+		require "require/login.php";
 	} else {
 		require "require/404.php";
 	}
